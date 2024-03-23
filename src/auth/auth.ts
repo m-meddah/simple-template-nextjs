@@ -1,8 +1,8 @@
-import NextAuth from "next-auth";
-import Google from "next-auth/providers/google";
+import { env } from "@/env";
 import { PrismaAdapter } from "@auth/prisma-adapter";
 import { PrismaClient } from "@prisma/client";
-import { env } from "@/env";
+import NextAuth from "next-auth";
+import Google from "next-auth/providers/google";
 
 const prisma = new PrismaClient();
 
