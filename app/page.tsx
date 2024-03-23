@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { Header } from "@/features/layout/Header";
 
 export default function Home() {
   return (
     <div>
-      <p>Test</p>
-      <Button>Test</Button>
+      <Header />
     </div>
   );
 }

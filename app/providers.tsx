@@ -10,8 +10,6 @@ export const Providers = (props: ProvidersProps) => {
   return (
     <ThemeProvider
       attribute="class"
-      defaultTheme="system"
-      enableSystem
       disableTransitionOnChange
     >
       <Toaster />
