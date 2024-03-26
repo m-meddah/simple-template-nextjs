@@ -1,9 +1,7 @@
 "use client";
 
 import { motion, useMotionValue, useScroll, useTransform } from "framer-motion";
-import { useSession } from "next-auth/react";
 import { useEffect } from "react";
-import { SignInButton } from "../auth/SignInButton";
 import { ModeToggle } from "../theme/ModeToggle";
 
 function useBoundedScroll(threshold: number) {
@@ -68,7 +66,6 @@ export function LandingHeader() {
         >
           <a href="#pricing">Pricing</a>
           <a href="#features">Features</a>
-          {/* <AppButton /> */}
           <ModeToggle />
         </motion.nav>
       </div>
@@ -78,13 +75,3 @@ export function LandingHeader() {
 
 let clamp = (number: number, min: number, max: number) =>
   Math.min(Math.max(number, min), max);
-
-// const AppButton = () => {
-//   const session = useSession();
-
-//   if (session.data?.user) {
-//     return <a href="/products">App</a>;
-//   } else {
-//     return <SignInButton />;
-//   }
-// };

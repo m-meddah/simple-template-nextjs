@@ -1,4 +1,5 @@
 import { CTASection } from "@/features/landing/CTASection";
+import { FeaturesSection } from "@/features/landing/FeatureSection";
 import { FooterSection } from "@/features/landing/FooterSection";
 import { HeroSection } from "@/features/landing/HeroSection";
 import { LandingHeader } from "@/features/landing/LandingHeader";
@@ -10,6 +11,7 @@ export default function Home() {
       <div className="h-16" />
       <LandingHeader />
       <HeroSection />
+      <FeaturesSection />
       <ProblemsSection />
       <CTASection />
       <FooterSection />
